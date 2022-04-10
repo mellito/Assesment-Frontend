@@ -1,5 +1,7 @@
+import Mainrouter from "./components/MainRouter"
+
 function App() {
-  return <div>hola mundo</div>
+  return <Mainrouter />
 }
 
 export default App
