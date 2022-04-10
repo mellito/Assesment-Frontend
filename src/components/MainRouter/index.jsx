@@ -10,7 +10,6 @@ function Mainrouter() {
         <Route path={HOME_ROUTER} element="{<Home />}" />
         <Route path={PRODUCT_DETAILS} element="{<CreatePerson />}" />
         <Route path={ABOUT} element="{<CreatePerson />}" />
-        <Route path="invoices" element="" />
       </Routes>
     </BrowserRouter>
   )
