@@ -9,11 +9,12 @@ function Home() {
 
   useEffect(() => {
     dispatch(fetchProduct())
-  })
+  }, [])
   return (
     <div>
       {products.map((product) => (
         <ProductCard
+          key={product.id}
           id={product.id}
           title={product.title}
           image={product.image}
