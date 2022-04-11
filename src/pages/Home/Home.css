@@ -6,6 +6,7 @@
   grid-template-rows: auto;
   margin: 0 auto;
   gap: 10px;
+  padding: 10px 0;
 }
 
 .Home-container img {
