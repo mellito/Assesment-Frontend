@@ -1,4 +1,5 @@
 .product-card-container {
+  height: 280px;
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -6,6 +7,10 @@
   border: 3px solid black;
   border-radius: 15px;
   padding: 10px;
+}
+
+.product-card-container h4 {
+  text-align: center;
 }
 
 .product-card-container .container__transfer {
