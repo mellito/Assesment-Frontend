@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react"
 import { useSelector } from "react-redux"
 import Loading from "../../components/loading"
+import "./ProductDetails.css"
 
 function ProducDetails() {
   const [load, setLoad] = useState(true)
@@ -21,13 +22,30 @@ function ProducDetails() {
   } = oneProducts
 
   return (
-    <div>
+    <div className="product-details-container">
       {load ? (
         <Loading />
       ) : (
-        <div>
-          {title},{rate},{count},{price},{description},{category}
+        <div className="details-card">
+          <section className="card-top">
+            <span>{title}</span>
+            <span>
+              {" "}
+              <strong>Category</strong>: {category}
+            </span>
+          </section>
           <img src={image} alt={title} />
+          <p>{description}</p>
+          <section className="card-botton">
+            <span>quantity: {count}</span>
+            <span>
+              {" "}
+              <strong>Price</strong>: ${price}
+            </span>
+          </section>
+          <p>
+            <strong>Rate</strong>: {rate}
+          </p>
         </div>
       )}
     </div>
