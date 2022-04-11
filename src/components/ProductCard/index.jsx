@@ -2,7 +2,7 @@ import React from "react"
 import { Link } from "react-router-dom"
 import { useDispatch } from "react-redux"
 import PropTypes from "prop-types"
-import { fetchOneProduct, restState } from "../../store/actions"
+import { fetchOneProduct } from "../../store/actions"
 import { PRODUCT_DETAILS } from "../../Constants/Routes"
 
 function ProductCard(props) {
@@ -10,7 +10,6 @@ function ProductCard(props) {
   const dispatch = useDispatch()
 
   const handleLinkCLick = async () => {
-    dispatch(restState())
     dispatch(fetchOneProduct(id))
   }
   return (
