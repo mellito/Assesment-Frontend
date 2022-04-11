@@ -1,0 +1,26 @@
+.profile-content {
+  padding: 40px 0;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  font-size: 24px;
+}
+
+.profile-content img {
+  max-height: 500px;
+  object-fit: contain;
+}
+.profile-content p {
+  padding-bottom: 20px;
+}
+
+.profile-content p:nth-child(1) {
+  text-transform: capitalize;
+}
+
+.profile-content ul {
+  list-style: none;
+  padding-bottom: 20px;
+}

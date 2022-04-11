@@ -4,6 +4,11 @@
   height: 90vh;
 }
 
+.loading h1 {
+  text-align: center;
+  color: rgb(79, 170, 255);
+}
+
 @keyframes ldio-33ti7t5vmk9-1 {
   0% {
     transform: rotate(0deg);
