@@ -1,4 +1,4 @@
-import { GET_PRODUCT, GET_SINGLE_PRODUCT } from "./types"
+import { GET_PRODUCT, GET_SINGLE_PRODUCT, RESET } from "./types"
 
 const initialState = {
   products: [],
@@ -9,6 +9,10 @@ const initialState = {
     category: "...",
     description: "...",
     image: "...",
+    rating: {
+      rate: 0,
+      count: 0,
+    },
   },
 }
 
@@ -24,6 +28,11 @@ export default function reducer(state = initialState, action) {
       return {
         ...state,
         oneProduct: action.payload,
+      }
+    case RESET:
+      return {
+        ...state,
+        oneProduct: initialState.oneProduct,
       }
     default:
       return state
