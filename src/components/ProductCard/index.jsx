@@ -9,7 +9,7 @@ function ProductCard(props) {
     <div>
       <img src={image} alt={title} />
       <p>{title}</p>
-      <Link to={`${PRODUCT_DETAILS}/${id}`} />
+      <Link to={`${PRODUCT_DETAILS}/${id}`}>Go details</Link>
     </div>
   )
 }
