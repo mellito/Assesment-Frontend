@@ -1,4 +1,4 @@
-import { GET_PRODUCT, GET_SINGLE_PRODUCT } from "./types"
+import { GET_PRODUCT, GET_SINGLE_PRODUCT, RESET } from "./types"
 import { getAllProducts, getOneProducts } from "../services/pruducts"
 
 export const getProduct = (product) => ({ type: GET_PRODUCT, payload: product })
@@ -6,6 +6,7 @@ export const getOneProduct = (id) => ({
   type: GET_SINGLE_PRODUCT,
   payload: id,
 })
+export const restState = () => ({ type: RESET })
 
 export const fetchProduct = () => async (dispatch) => {
   try {
