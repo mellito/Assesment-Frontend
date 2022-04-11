@@ -12,7 +12,7 @@ export const fetchProduct = () => async (dispatch) => {
     const product = await getAllProducts()
     dispatch(getProduct(product))
   } catch (error) {
-    console.log(error)
+    console.log(`este es un error ${error}`)
   }
 }
 
