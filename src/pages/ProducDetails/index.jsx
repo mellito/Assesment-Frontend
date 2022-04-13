@@ -22,22 +22,22 @@ function ProducDetails() {
   } = oneProducts
 
   return (
-    <div className="product-details-container">
+    <div className="product-details">
       {load ? (
         <Loading />
       ) : (
         <div className="details-card">
           <section className="card-top">
-            <span>{title}</span>
+            <span className="card-top_title">{title}</span>
             <span>
               {" "}
               <strong>Category</strong>: {category}
             </span>
           </section>
           <img src={image} alt={title} />
-          <p>{description}</p>
+          <p className="details-card__description">{description}</p>
           <section className="card-botton">
-            <span>quantity: {count}</span>
+            <span className="card-botton__quantity">quantity: {count}</span>
             <span>
               {" "}
               <strong>Price</strong>: ${price}

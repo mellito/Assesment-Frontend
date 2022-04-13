@@ -1,9 +1,11 @@
 .profile-content {
   padding: 40px 0;
   width: 80%;
+  height: 90vh;
   margin: 0 auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 20px;
   font-size: 24px;
 }
@@ -12,15 +14,15 @@
   max-height: 500px;
   object-fit: contain;
 }
-.profile-content p {
+.profile-content .profile-content__information p {
   padding-bottom: 20px;
 }
 
-.profile-content p:nth-child(1) {
+.profile-content .profile-content__information p:nth-child(1) {
   text-transform: capitalize;
 }
 
-.profile-content ul {
+.profile-content .profile-content__information ul {
   list-style: none;
   padding-bottom: 20px;
 }
