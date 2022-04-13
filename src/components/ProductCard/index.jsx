@@ -26,9 +26,9 @@ function ProductCard(props) {
     setRandom(0)
   }
   return (
-    <div className="product-card-container">
-      <img src={image} alt={title} />
-      <h4>{title}</h4>
+    <div className="product-card">
+      <img className="product-card__image" src={image} alt={title} />
+      <h4 className="product-card__title">{title}</h4>
 
       <div className="container__transfer">
         <Countdown

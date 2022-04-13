@@ -1,4 +1,4 @@
-nav {
+.navbar-container {
   background-color: rgb(122, 121, 121);
   height: 10vh;
   display: flex;
@@ -6,7 +6,7 @@ nav {
   align-items: center;
   gap: 20px;
 }
-nav a {
+.navbar-container .navbar-container__link {
   color: white;
   text-decoration: none;
   font-size: 20px;
@@ -15,6 +15,6 @@ nav a {
   letter-spacing: 1px;
 }
 
-nav a:hover {
+.navbar-container .navbar-container__link:hover {
   color: black;
 }

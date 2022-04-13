@@ -1,4 +1,4 @@
-.product-details-container {
+.product-details {
   display: grid;
   height: 90vh;
   place-content: center;
@@ -16,7 +16,7 @@
   border-radius: 20px;
 }
 
-.details-card p:nth-child(3) {
+.details-card .details-card__description {
   margin-bottom: 10px;
 }
 
@@ -27,7 +27,7 @@
   margin-bottom: 20px;
 }
 
-.product-details-container .card-top span:nth-child(1) {
+.product-details .card-top_title {
   text-transform: capitalize;
   font-weight: bolder;
 }
@@ -45,7 +45,7 @@
   margin-bottom: 20px;
 }
 
-.card-botton span {
+.card-botton .card-botton__quantity {
   font-weight: bold;
   text-transform: capitalize;
 }
